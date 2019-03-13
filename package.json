@@ -1,0 +1,27 @@
+{
+  "name": "sparks-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dom.js",
+  "scripts": {
+    "test": "node test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAC-Sixteen/sparks-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAC-Sixteen/sparks-todo/issues"
+  },
+  "homepage": "https://github.com/FAC-Sixteen/sparks-todo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.18.10",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.1"
+  }
+}
