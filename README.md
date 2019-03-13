@@ -3,15 +3,15 @@
 ## 👩‍🔧 Team: 
 Anna @aniablaziak
 
-Kate @
+Kate @dubhcait
 
-Bobby @
+Bobby @bobbysebolao
 
 ## 🏌️‍♂️ Our goals: 
 - mobile first design from the start
 - accessible design 
 - two sets of buttons (one smaller on top, one bolder below) for adding a new todo and switching the order 
-- optimizing the app to be dyslexia-friendky
+- optimizing the app to be dyslexia-friendly
 
 ### 🏋️‍♀️ Some stretch goals:
 
