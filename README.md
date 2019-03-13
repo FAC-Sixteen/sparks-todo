@@ -2,13 +2,16 @@
 
 ## 👩‍🔧 Team: 
 Anna @aniablaziak
+
 Kate @
+
 Bobby @
 
 ## 🏌️‍♂️ Our goals: 
 - mobile first design from the start
 - accessible design 
 - two sets of buttons (one smaller on top, one bolder below) for adding a new todo and switching the order 
+- optimizing the app to be dyslexia-friendky
 
 ### 🏋️‍♀️ Some stretch goals:
 
@@ -32,5 +35,6 @@ Bobby @
 - starting the project with JavaScript (instead of HTML and styling)
 - working on the code provided instead of starting a project from scratch 
 - working on functions first rather than working on the tests
+- not knowing about equal vs deepEqual
 
 ## 🧗‍♂️ What we've learned:
