@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>tdd todo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tdd todo app</title>
+    <meta content="This is a web based to do app built with TDD methods">
+    <link rel="stylesheet" href="./normalise.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <h1>To Do App</h1>
+    <div id="todo-container" class="todo" >
     <div id="todo-container">
-        <ul>
+        <ul class="todo__ul">
         </ul>
     </div>
-    <form id="add-todo">
-        <input type="text" name="description" value="">
-        <input class='submit-button' type="submit" name="" value="Submit">
+    <form id="add-todo" class="add-form">
+        <input type="text" class="add-form__input" name="description" value="" aria-label="input area for adding a task to your do to list">
+        <input class='submit-button' class="add-form__button"  type="submit" name="" value="Submit">
     </form>
 </body>
 <script type="text/javascript" src="./logic.js"></script>
