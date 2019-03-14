@@ -14,6 +14,9 @@ Bobby @bobbysebolao
 - optimizing the app to be dyslexia-friendly
 
 ### 🏋️‍♀️ Some stretch goals:
+- function for the switch button
+- editing the todos
+- adding CSS animations 
 
 ## 👷‍♀️ Built with: 
 * JavaScript
@@ -21,9 +24,10 @@ Bobby @bobbysebolao
 * CSS
 * Node packages: tape, tap-spec, istanbul, nodemon
 * skeleton folder from FAC
+* Figma for design
 
 ## 🌊 Our workflow:
-- First work on JavaScript and testing 
+- First work on JavaScript and testing (programming together in a team of three)
 
 ## 🔬 Testing: 
 
