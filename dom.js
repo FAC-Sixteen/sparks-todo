@@ -1,3 +1,5 @@
+
+
 // part 2 linking it all together
 // The function here is called an iife,
 // it keeps everything inside hidden from the rest of our application
@@ -32,8 +34,11 @@
 
         // add span holding description
         var todoNode_span = document.createElement('span');
-        //    todoNode_span.textContent = state.description;
+      
         todoNode.appendChild(todoNode_span);
+
+      todoNode_span.textContent = todo.description; 
+
         // this adds the delete button
 
         var deleteButtonNode = document.createElement('button');
@@ -58,15 +63,19 @@
 
     // bind create todo form
     if (addTodoForm) {
+
         addTodoForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
             // https://developer.mozilla.org/en-US/docs/Web/Events/submit
             // what does event.preventDefault do?
             // what is inside event.target?
 
-            var description = event.target.value; // event.target ....
-
+            var description = document.querySelector('.add-form__input').value; // event.target ....
+          
+console.log(description);
             // hint: todoFunctions.addTodo
-            var newState = []; // ?? change this!
+            var newState = todoFunctions.addTodo(state, description); // ?? change this!
             update(newState);
         });
     }
@@ -91,3 +100,4 @@
 
     if (container) renderState(state);
 })();
+
