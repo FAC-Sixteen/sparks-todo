@@ -11,6 +11,11 @@ var exampleArray = [{
     description: 'make coffee',
     done: false,
   },
+  {
+    id: 2,
+    description: 'make tea',
+    done: false,
+  },
 ];
 
 var newArray = [{
@@ -58,15 +63,24 @@ test("To-do output", function (t) {
 });
 
 test("To-do output", (t) => {
-  const actual = logic.deleteTodo([{
-    id: 1,
-    description: 2
-  }], 1);
-  const expected = [];
-  t.deepEqual(actual, expected, "Input 1 should return []");
+  const testArray = logic.deleteTodo(exampleArray, 1);
+  const actual = testArray.length;
+  const expected = 2;
+  t.equal(actual, expected, "Length should be one less");
   t.end();
 });
-//
+
+test("To-do output", (t) => {
+  const testArray = logic.deleteTodo(exampleArray, 1);
+  const actual = testArray.includes(testArray.id === 1);
+  const expected = false;
+  t.equal(actual, expected, "The targeted id should be removed");
+  t.end();
+});
+
+
+
+
 // test("To-do output", (t) => {
 //   const actual = logic.markTodo();
 //   const expected = 1;
