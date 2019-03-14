@@ -30,6 +30,8 @@ var todoFunctions = {
             done: false
         };
 
+        console.log(clonedArray);
+
         return todoFunctions.cloneArrayOfObjects(todos).concat(clonedArray);
         // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
         // returns a new array, it should contain todos with the newTodo added to the end.
