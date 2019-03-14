@@ -63,7 +63,7 @@ Step 3. Spruce up the user interface with CSS, web fonts and images
 
 We struggled to write tests for functions that we hadn't yet written. This was frustrating at first, especially because we thought we new ways to write the same code that would work without testing. As the project went on, it started to make more sense - the point of testing before writing the code was to make sure we wrote code as concisely as possible, and only for functions that were essential for the project requirements.
 
-### 3. Not all methods are created deepEqual
+### 2. Not all methods are created deepEqual
 
 ![img_5101](https://media.giphy.com/media/ALZ1PPM20REZ2/giphy.gif)
 
