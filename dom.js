@@ -23,7 +23,6 @@
 
     // This function takes a todo, it returns the DOM node representing that todo
 
-    console.log(state[1].description)
     var createTodoNode = function (todo) {
         var todoNode = document.createElement('li');
         todoNode.addEventListener('click', function(target) {
@@ -45,6 +44,13 @@
         todoNode.appendChild(deleteButtonNode);
 
         // add markTodo button
+        var markButtonNode = document.createElement('button');
+        markButtonNode.addEventListener('click', function (event) {
+            markButtonNode.classList.add('complete')
+            var newState = todoFunctions.markTodo(state, todo.id);
+            update(newState);
+        });
+        todoNode.appendChild(markButtonNode);
 
         // add classes for css
 
@@ -58,7 +64,7 @@
             // what does event.preventDefault do?
             // what is inside event.target?
 
-            var description = '?'; // event.target ....
+            var description = event.target.value; // event.target ....
 
             // hint: todoFunctions.addTodo
             var newState = []; // ?? change this!

@@ -26,7 +26,6 @@ var newArray = [{
 
 
 test('Example', function (t) {
-<<<<<<< Updated upstream
   t.pass();
   t.end();
 });
@@ -73,7 +72,6 @@ test("To-do output", (t) => {
 ||||||| merged common ancestors
     t.pass();
     t.end();
-<<<<<<< HEAD
 });
 
 test ('todo function', function (t){
@@ -86,15 +84,6 @@ test ('todo function', function (t){
 }
 
 )
-||||||| merged common ancestors
-});
-=======
-});
-=======
-    t.pass();
-    t.end();
-})
->>>>>>> Stashed changes
 
 test("To-do output", (t) => {
   const testArray = logic.deleteTodo(exampleArray, 1);
@@ -107,22 +96,6 @@ test("To-do output", (t) => {
 
 
 
-<<<<<<< HEAD
-||||||| merged common ancestors
-// test("To-do output", (t) => {
-//   const actual = logic.markTodo();
-//   const expected = 1;
-//   t.equal(actual, expected, "Input 1 should return 1");
-//   t.end();
-// });
-//
-// test("To-do output", (t) => {
-//   const actual = logic.sortTodos();
-//   const expected = 1;
-//   t.equal(actual, expected, "Input 1 should return 1");
-//   t.end();
-// });
-=======
 test("To-do output", (t) => {
   const testArray = logic.markTodo(exampleArray, 1);
   const actual = testArray[1].done
@@ -157,4 +130,3 @@ test("To-do output", (t) => {
 //   t.equal(actual, expected, "Input 1 should return 1");
 //   t.end();
 // });
->>>>>>> master
