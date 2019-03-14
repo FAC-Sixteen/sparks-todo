@@ -24,37 +24,22 @@ var todoFunctions = {
     },
 
     addTodo: function (todos, newTodo) {
+        let clonedArray = {
+            id: todoFunctions.generateId(),
+            description: newTodo,
+            done: false
+        };
 
-      // console.log(typeof(todos));
-
-      console.log("THIS WILL WORK");
-
-      // let clonedArray = todoFunctions.cloneArrayOfObjects(todos);
-
-      let clonedArray = {
-        id: todoFunctions.generateId(),
-        description: newTodo,
-        done: false
-      };
-
-      return todoFunctions.cloneArrayOfObjects(todos).concat(newTodo);
-
-      // if (!todos) {
-      //   return "Nope"
-      // }
-      //
-      // else {
-      //   return todoFunctions.cloneArrayOfObjects(todos);
-      // }
-
-      // return temp.concat(newTodo);
-
+        return todoFunctions.cloneArrayOfObjects(todos).concat(clonedArray);
         // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
         // returns a new array, it should contain todos with the newTodo added to the end.
         // add an id to the newTodo. You can use the generateId function to create an id.
         // hint: array.concat
     },
     deleteTodo: function (todos, idToDelete) {
+        return todoFunctions.cloneArrayOfObjects(todos).filter(function (item) {
+            return !item.id.value === idToDelete
+        });
         // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
         // return a new array, this should not contain any todo with an id of idToDelete
         // hint: array.filter
@@ -75,7 +60,7 @@ var todoFunctions = {
 
 // console.log(todoFunctions.addTodo());
 
-todoFunctions.addTodo([12,13,14], 15);
+todoFunctions.addTodo([12, 13, 14], 15);
 
 
 // Why is this if statement necessary?
