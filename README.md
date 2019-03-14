@@ -1,6 +1,6 @@
 # Week 2 Project To Do App
 
-This project is live on: https://fac-sixteen.github.io/sparks-todo
+This project is live on: https://fac-sixteen.github.io/sparks-todo/
 
 ## To run the project locally :computer:
 
