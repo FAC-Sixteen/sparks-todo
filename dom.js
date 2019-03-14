@@ -1,5 +1,3 @@
-
-
 // part 2 linking it all together
 // The function here is called an iife,
 // it keeps everything inside hidden from the rest of our application
@@ -34,27 +32,30 @@
 
         // add span holding description
         var todoNode_span = document.createElement('span');
-      
+
         todoNode.appendChild(todoNode_span);
 
-      todoNode_span.textContent = todo.description; 
+        todoNode_span.textContent = todo.description;
 
         // this adds the delete button
-
+        var buttonsContainer = document.createElement('span');
+        todoNode.appendChild(buttonsContainer);
         var deleteButtonNode = document.createElement('button');
         deleteButtonNode.addEventListener('click', function (event) {
             var newState = todoFunctions.deleteTodo(state, todo.id);
             update(newState);
         });
-        todoNode.appendChild(deleteButtonNode);
+        deleteButtonNode.classList.add('bin');
+        buttonsContainer.appendChild(deleteButtonNode);
 
         // add markTodo button
         var markButtonNode = document.createElement('button');
-
+        markButtonNode.classList.add('tick')
         markButtonNode.addEventListener('click', function (event) {
             todoNode.classList.toggle('complete')
         });
-        todoNode.appendChild(markButtonNode);
+        buttonsContainer.appendChild(markButtonNode);
+
 
         // add classes for css
 
@@ -72,11 +73,10 @@
             // what is inside event.target?
 
             var description = document.querySelector('.add-form__input').value; // event.target ....
-          
-console.log(description);
             // hint: todoFunctions.addTodo
             var newState = todoFunctions.addTodo(state, description); // ?? change this!
             update(newState);
+            document.querySelector('.add-form__input').value = "";
         });
     }
 
@@ -100,4 +100,3 @@ console.log(description);
 
     if (container) renderState(state);
 })();
-
