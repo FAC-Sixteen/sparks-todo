@@ -1,0 +1,19 @@
+body {
+    background: whitesmoke;
+}
+
+form {
+    border: solid black 2px;
+}
+
+todo-container {
+    border: solid yellow 2px
+}
+
+li {
+    border: solid red 1px;
+}
+
+.upper {
+    text-transform: uppercase;
+}

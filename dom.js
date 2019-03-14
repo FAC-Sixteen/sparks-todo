@@ -18,16 +18,25 @@
             id: -1,
             description: 'third todo'
         },
+     
     ]; // this is our initial todoList
 
     // This function takes a todo, it returns the DOM node representing that todo
+
+    console.log(state[1].description)
     var createTodoNode = function (todo) {
         var todoNode = document.createElement('li');
+        todoNode.addEventListener('click', function(target) {
+            // target.classList.add('upper')
+        })
         // you will need to use addEventListener
 
         // add span holding description
-
+    var todoNode_span = document.createElement('span');
+    //    todoNode_span.textContent = state.description;
+    todoNode.appendChild(todoNode_span);
         // this adds the delete button
+
         var deleteButtonNode = document.createElement('button');
         deleteButtonNode.addEventListener('click', function (event) {
             var newState = todoFunctions.deleteTodo(state, todo.id);
