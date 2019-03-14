@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <title>tdd todo app</title>
     <meta content="This is a web based to do app built with TDD methods">
     <link rel="stylesheet" href="./normalise.css">
@@ -12,15 +15,15 @@
 
 <body>
     <h1>To Do App</h1>
-    <div id="todo-container" class="todo" >
+    <div id="todo-container" class="todo">
 
         <ul class="todo__ul">
-           
+
         </ul>
     </div>
     <form id="add-todo" class="add-form">
-        <input type="text" class="add-form__input" name="description" value="" aria-label="input area for adding a task to your do to list" >
-        <input type="submit" class="add-form__button" name="" value="Submit">
+        <input type="text" class="add-form__input" required name="description" value="" aria-label="input area for adding a task to your do to list">
+        <input type="submit" class="add-form__button" name="" value="+" aria-label="submit new to do">
     </form>
 </body>
 <script type="text/javascript" src="./logic.js"></script>
