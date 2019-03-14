@@ -45,6 +45,15 @@ var todoFunctions = {
         // hint: array.filter
     },
     markTodo: function (todos, idToMark) {
+        return todoFunctions.cloneArrayOfObjects(todos).map(function (item) {
+            if (item.id === idToMark) {
+                console.log(typeof(item.done));
+                item.done = !item.done;
+                return item;
+            }
+            return item;
+        });
+      
         // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
         // in the new todo array, all elements will remain unchanged except the one with id: idToMark
         // this element will have its done value toggled
@@ -60,7 +69,7 @@ var todoFunctions = {
 
 // console.log(todoFunctions.addTodo());
 
-todoFunctions.addTodo([12, 13, 14], 15);
+
 
 
 // Why is this if statement necessary?

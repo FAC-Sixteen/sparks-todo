@@ -81,12 +81,33 @@ test("To-do output", (t) => {
 
 
 
-// test("To-do output", (t) => {
-//   const actual = logic.markTodo();
-//   const expected = 1;
-//   t.equal(actual, expected, "Input 1 should return 1");
-//   t.end();
-// });
+test("To-do output", (t) => {
+  const testArray = logic.markTodo(exampleArray, 1);
+  const actual = testArray[1].done
+  console.log(testArray);
+  const expected = true;
+  t.equal(actual, expected, "Input 1 should return true");
+  t.end();
+});
+
+test("To-do output", (t) => {
+  const testArray = logic.markTodo(exampleArray, 0);
+  const actual = testArray[0].done
+  console.log(testArray);
+  const expected = false;
+  t.equal(actual, expected, "Input 0 should return false");
+  t.end();
+});
+
+test("To-do output", (t) => {
+  const testArray = logic.markTodo(exampleArray, 0);
+  const actual = testArray[1].done
+  console.log(testArray);
+  const expected = false;
+  t.equal(actual, expected, "Input 0 should not change done of id : 1");
+  t.end();
+});
+
 //
 // test("To-do output", (t) => {
 //   const actual = logic.sortTodos();
