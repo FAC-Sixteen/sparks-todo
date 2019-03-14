@@ -59,7 +59,7 @@ Step 3. Spruce up the user interface with CSS, web fonts and images
 ## 🧗‍♂️ What we've learned:
 
 ### 1. TDD is testing, in more ways than one!
-![img_5101](/to-do-app-plan.jpg)
+![img_5101](/tdd-in-a-nutshell.jpg)
 
 We struggled to write tests for functions that we hadn't yet written. This was frustrating at first, especially because we thought we new ways to write the same code that would work without testing. As the project went on, it started to make more sense - the point of testing before writing the code was to make sure we wrote code as concisely as possible, and only for functions that were essential for the project requirements.
 
