@@ -18,3 +18,78 @@ li {
     border: solid green 1px;
     height: 200px;
 }
+
+@font-face {
+    font-family: OpenDyslexic;
+    src:url("./OpenDyslexic-Regular.woff");
+}
+
+body {
+
+    font-family: OpenDyslexic,'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+    background: #FFF5CD;
+    box-sizing: border-box;
+    padding: 0 3em;
+  }
+
+  h1 {
+    font-weight : bold;
+    text-align : center;
+    font-size: 3rem;
+    margin-top: 5%;
+    color: #013970;
+  }
+
+  .todo {
+  
+  }
+
+  .todo__ul {
+
+  }
+
+  .todo__li {
+    box-sizing: border-box;
+    max-width: 1000px;
+    min-width: 100px;
+    margin : 0.5rem auto;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    border : 3px solid #C4C4C4;
+    display : flex;
+    justify-content: space-between;
+    align-items : center;
+   
+  }
+
+  .add-form {
+box-sizing: border-box;    
+background: #013970;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1.5%;
+border-radius: 6px;
+max-width: 1000px;
+margin: 5px auto;
+
+  }
+
+  .add-form__input {
+margin: 10px 5px;
+font-family: OpenDyslexic;
+border-radius: 0.25rem;
+
+  }
+
+  .add-form__button {
+    background: #C4C4C4;
+color:background: #013970; 
+font-family: OpenDyslexic;
+border-radius: 0.25rem;
+  }
+
+  .done {
+      text-decoration: line-through;
+  }
