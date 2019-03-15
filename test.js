@@ -30,7 +30,7 @@ test('Example', function (t) {
   t.end();
 });
 
-test("To-do output", function (t) {
+test("To-do output of addTodo", function (t) {
   const testArray = logic.addTodo(exampleArray, "avocado");
   const actual = Array.isArray(testArray);
   const expected = true;
@@ -38,7 +38,7 @@ test("To-do output", function (t) {
   t.end();
 })
 
-test("To-do output", function (t) {
+test("Test old array isn't altered by addTodo", function (t) {
   const actual = exampleArray;
   const expected = exampleArray.slice();
   logic.addTodo(exampleArray, newArray);
@@ -46,7 +46,7 @@ test("To-do output", function (t) {
   t.end();
 })
 
-test("To-do output", function (t) {
+test("Test that input is put as new objects description by addTodo", function (t) {
   const testArray = logic.addTodo(exampleArray, "avocado");
   const actual = testArray[testArray.length - 1].description;
   const expected = "avocado";
@@ -54,7 +54,7 @@ test("To-do output", function (t) {
   t.end();
 });
 
-test("To-do output", function (t) {
+test("Test that default done attribute added is false, addTodo", function (t) {
   const testArray = logic.addTodo(exampleArray, "avocado");
   const actual = testArray[testArray.length - 1].done;
   const expected = false;
@@ -62,7 +62,7 @@ test("To-do output", function (t) {
   t.end();
 });
 
-test("To-do output", (t) => {
+test("Test deleteTodo remove an object", (t) => {
   const testArray = logic.deleteTodo(exampleArray, 1);
   const actual = testArray.length;
   const expected = 2;
@@ -71,7 +71,7 @@ test("To-do output", (t) => {
 });
 
 
-test("To-do output", (t) => {
+test("Test The targeted id is removed by deleteTodo", (t) => {
   const testArray = logic.deleteTodo(exampleArray, 1);
   const actual = testArray.includes(testArray.id === 1);
   const expected = false;
@@ -82,7 +82,7 @@ test("To-do output", (t) => {
 
 
 
-test("To-do output", (t) => {
+test("Testing markTodo changes done value", (t) => {
   const testArray = logic.markTodo(exampleArray, 1);
   const actual = testArray[1].done
   console.log(testArray);
@@ -91,7 +91,7 @@ test("To-do output", (t) => {
   t.end();
 });
 
-test("To-do output", (t) => {
+test("Testing markTodo changes done value from true to false", (t) => {
   const testArray = logic.markTodo(exampleArray, 0);
   const actual = testArray[0].done
   console.log(testArray);
@@ -100,7 +100,7 @@ test("To-do output", (t) => {
   t.end();
 });
 
-test("To-do output", (t) => {
+test("Testing markTodo does not change the 'done' value of non targeted objects", (t) => {
   const testArray = logic.markTodo(exampleArray, 0);
   const actual = testArray[1].done
   console.log(testArray);
