@@ -52,7 +52,7 @@ Step 3. Spruce up the user interface with CSS, web fonts and images
 
 ## Accessibility
 
-![](/Screen Shot 2019-03-15 at 13.02.09.png)
+![](Screen Shot 2019-03-15 at 13.02.09.png)
 
 ## 🤷‍♂️ Issues and what we struggled with:
 - starting the project with JavaScript (instead of HTML and styling)
