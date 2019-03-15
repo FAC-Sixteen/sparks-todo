@@ -47,11 +47,13 @@
             update(newState);
         });
         deleteButtonNode.classList.add('bin');
+        deleteButtonNode.setAttribute("aria-label", "delete to do")
         buttonsContainer.appendChild(deleteButtonNode);
 
         // add markTodo button
         var markButtonNode = document.createElement('button');
         markButtonNode.classList.add('tick')
+        markButtonNode.setAttribute("aria-label", "mark to do as complete")
         markButtonNode.addEventListener('click', function (event) {
             todoNode.classList.toggle('complete')
         });
