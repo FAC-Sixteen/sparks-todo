@@ -50,6 +50,10 @@ Step 3. Spruce up the user interface with CSS, web fonts and images
 - Different styling on completed to-dos (grayed out)
 - Icons for add/delete/submit buttons (with aria labels for screen reader accessibility)
 
+## Accessibility
+
+![](/Screen Shot 2019-03-15 at 13.02.09.png)
+
 ## 🤷‍♂️ Issues and what we struggled with:
 - starting the project with JavaScript (instead of HTML and styling)
 - working on the code provided instead of starting a project from scratch
