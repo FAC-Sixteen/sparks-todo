@@ -85,7 +85,7 @@ Tape has two methods for comparing `actual` and `expected` - `equal` and `deepEq
 
 This prevents ...
 
-![img_5101](https://media.giphy.com/media/ALZ1PPM20REZ2/giphy.gif)
+![img_5101](/confused-keanu.jpg)
 
 ### 4. Communicating with other teams is useful
 
