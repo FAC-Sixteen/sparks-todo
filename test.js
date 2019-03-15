@@ -39,8 +39,10 @@ test("To-do output of addTodo", function (t) {
 })
 
 test("Test old array isn't altered by addTodo", function (t) {
-  const actual = exampleArray;
   const expected = exampleArray.slice();
+  const testArray = logic.addTodo(exampleArray, "avocado");
+  const actual = exampleArray;
+
   logic.addTodo(exampleArray, newArray);
   t.deepEqual(actual, expected, "Test old array doesn't change");
   t.end();
