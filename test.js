@@ -69,21 +69,7 @@ test("To-do output", (t) => {
   t.equal(actual, expected, "Length should be one less");
   t.end();
 });
-||||||| merged common ancestors
-    t.pass();
-    t.end();
-});
 
-test ('todo function', function (t){
-
-    let actual = logic.todoFunctions.generateId
-    let expected = 0;
-    t.equal(actual, expected)
-    t.end()
-
-}
-
-)
 
 test("To-do output", (t) => {
   const testArray = logic.deleteTodo(exampleArray, 1);
