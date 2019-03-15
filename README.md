@@ -2,7 +2,7 @@
 
 This project is live on: https://fac-sixteen.github.io/sparks-todo/
 
-## To run the project locally :computer:
+:computer: ## To run the project locally
 
 1. Clone or fork the repo
 2. Go into the project folder `cd sparks-todo`
