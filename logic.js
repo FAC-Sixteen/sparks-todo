@@ -53,9 +53,11 @@ var todoFunctions = {
                 item.done = !item.done;
                 return item;
             }
+            else {
             return item;
+          }
         });
-      
+
         // should leave the input argument todos unchanged (you can use cloneArrayOfObjects)
         // in the new todo array, all elements will remain unchanged except the one with id: idToMark
         // this element will have its done value toggled
