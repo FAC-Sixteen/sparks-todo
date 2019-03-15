@@ -34,12 +34,13 @@
         var todoNode_span = document.createElement('span');
 
         todoNode.appendChild(todoNode_span);
-
+        todoNode_span.classList.add("todo-wrapper")
         todoNode_span.textContent = todo.description;
 
         // this adds the delete button
         var buttonsContainer = document.createElement('span');
         todoNode.appendChild(buttonsContainer);
+        buttonsContainer.classList.add("buttons-container");
         var deleteButtonNode = document.createElement('button');
         deleteButtonNode.addEventListener('click', function (event) {
             var newState = todoFunctions.deleteTodo(state, todo.id);
