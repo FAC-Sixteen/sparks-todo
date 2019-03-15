@@ -37,12 +37,16 @@ Bobby @bobbysebolao
 * skeleton folder from FAC
 * [Figma for design](https://www.figma.com/file/FnJKDAXS9XO8d3xh9VHR6gqs/To-do-App?node-id=0%3A1)
 
-## 🌊 Our workflow:
-Step 1. First work on JavaScript and testing (programming together in a team of three)
-Step 2. Link the JavaScript functionality to the DOM interface
-Step 3. Spruce up the user interface with CSS, web fonts and images
+## 🔬 Test Packages:
+- Tape
+- Tap-Spec
+- Nodemon
+- Istanbul (100% test coverage)
 
-## 🔬 Testing:
+## 🌊 Our workflow:
+Step 1. First work on JavaScript and testing (programming together in a team of three)  
+Step 2. Link the JavaScript functionality to the DOM interface  
+Step 3. Spruce up the user interface with CSS, web fonts and images
 
 ## 🖍 Design:
 - Two-tone colour palette
@@ -80,6 +84,8 @@ Tape has two methods for comparing `actual` and `expected` - `equal` and `deepEq
 ### 3. preventDefault
 
 This prevents ...
+
+![img_5101](https://media.giphy.com/media/ALZ1PPM20REZ2/giphy.gif)
 
 ### 4. Communicating with other teams is useful
 
