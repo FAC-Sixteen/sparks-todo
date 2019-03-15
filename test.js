@@ -1,7 +1,7 @@
-var test = require('tape');
-var logic = require('./logic');
+let test = require('tape');
+let logic = require('./logic');
 
-var exampleArray = [{
+let exampleArray = [{
     id: 0,
     description: 'smash avocados',
     done: true,
@@ -18,7 +18,7 @@ var exampleArray = [{
   },
 ];
 
-var newArray = [{
+let newArray = [{
   id: 0,
   description: 'make smoothie out of things that should really be cooked',
   done: false,
