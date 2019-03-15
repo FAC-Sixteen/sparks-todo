@@ -8,15 +8,18 @@
 
     var state = [{
             id: -3,
-            description: 'first todo'
+            description: 'first todo',
+            done: true
         },
         {
             id: -2,
-            description: 'second todo'
+            description: 'second todo',
+            done: false
         },
         {
             id: -1,
-            description: 'third todo'
+            description: 'third todo',
+            done: false
         },
 
     ]; // this is our initial todoList
@@ -25,9 +28,14 @@
 
     var createTodoNode = function (todo) {
         var todoNode = document.createElement('li');
-        todoNode.addEventListener('click', function (target) {
+
             // target.classList.add('upper')
-        })
+            if (todo.done == true) {
+              todoNode.classList.add('complete');
+            }
+
+              // todoNode.classList.toggle('complete');
+
         // you will need to use addEventListener
 
         // add span holding description
@@ -45,6 +53,7 @@
         deleteButtonNode.addEventListener('click', function (event) {
             var newState = todoFunctions.deleteTodo(state, todo.id);
             update(newState);
+            // setActive(newState);
         });
         deleteButtonNode.classList.add('bin');
         deleteButtonNode.setAttribute("aria-label", "delete to do")
@@ -55,10 +64,13 @@
         markButtonNode.classList.add('tick')
         markButtonNode.setAttribute("aria-label", "mark to do as complete")
         markButtonNode.addEventListener('click', function (event) {
-            todoNode.classList.toggle('complete')
+          var newState = todoFunctions.markTodo(state, todo.id);
+            update(newState);
+            console.log(newState);
+            setActive(newState);
+
         });
         buttonsContainer.appendChild(markButtonNode);
-
 
         // add classes for css
 
@@ -95,6 +107,7 @@
 
         state.forEach(function (todo) {
             todoListNode.appendChild(createTodoNode(todo));
+            // console.log(todoListNode.childNodes);
         });
 
         // you may want to add a class for css
