@@ -42,12 +42,13 @@
         var todoNode_span = document.createElement('span');
 
         todoNode.appendChild(todoNode_span);
-
+        todoNode_span.classList.add("todo-wrapper")
         todoNode_span.textContent = todo.description;
 
         // this adds the delete button
         var buttonsContainer = document.createElement('span');
         todoNode.appendChild(buttonsContainer);
+        buttonsContainer.classList.add("buttons-container");
         var deleteButtonNode = document.createElement('button');
         deleteButtonNode.addEventListener('click', function (event) {
             var newState = todoFunctions.deleteTodo(state, todo.id);
@@ -55,12 +56,13 @@
             // setActive(newState);
         });
         deleteButtonNode.classList.add('bin');
+        deleteButtonNode.setAttribute("aria-label", "delete to do")
         buttonsContainer.appendChild(deleteButtonNode);
 
         // add markTodo button
         var markButtonNode = document.createElement('button');
-        markButtonNode.classList.add('tick');
-
+        markButtonNode.classList.add('tick')
+        markButtonNode.setAttribute("aria-label", "mark to do as complete")
         markButtonNode.addEventListener('click', function (event) {
           var newState = todoFunctions.markTodo(state, todo.id);
             update(newState);
